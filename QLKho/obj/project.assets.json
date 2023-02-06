@@ -1824,6 +1824,29 @@
         "runtime": {
           "bin/placeholder/Data.SqlServer.dll": {}
         }
+      },
+      "NetCore.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "NetCore.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NetCore.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetCore.Application.dll": {}
+        }
+      },
+      "NetCore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/NetCore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetCore.Domain.dll": {}
+        }
       }
     }
   },
@@ -5972,6 +5995,16 @@
       "type": "project",
       "path": "../Data.SqlServer/Data.SqlServer.csproj",
       "msbuildProject": "../Data.SqlServer/Data.SqlServer.csproj"
+    },
+    "NetCore.Application/1.0.0": {
+      "type": "project",
+      "path": "../NetCore.Application/NetCore.Application.csproj",
+      "msbuildProject": "../NetCore.Application/NetCore.Application.csproj"
+    },
+    "NetCore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NetCore.Domain/NetCore.Domain.csproj",
+      "msbuildProject": "../NetCore.Domain/NetCore.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5985,6 +6018,7 @@
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
+      "NetCore.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -6021,6 +6055,9 @@
           "projectReferences": {
             "C:\\Users\\Admin\\Desktop\\QLKho\\Data.SqlServer\\Data.SqlServer.csproj": {
               "projectPath": "C:\\Users\\Admin\\Desktop\\QLKho\\Data.SqlServer\\Data.SqlServer.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\QLKho\\NetCore.Application\\NetCore.Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\QLKho\\NetCore.Application\\NetCore.Application.csproj"
             }
           }
         }

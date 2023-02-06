@@ -17,12 +17,16 @@ namespace Data.SqlServer.Systems
         [StringLength(128)]
         [Column("DisplayName")]
         public string? DisplayName { get; set; }
-        
-        //        Id
-        //DisplayName
+        [Required]
+        [StringLength(128)]
+        [Column("QRCode")]
+        public string? QRCode { get; set; }
+        [Required]
+        [StringLength(128)]
+        [Column("BarCode")]
+        public string? BarCode { get; set; }
+
         //IdUnit
         //IdSuplier
-        //QRCode
-        //BarCode
     }
 }

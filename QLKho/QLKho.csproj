@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data.SqlServer\Data.SqlServer.csproj" />
+    <ProjectReference Include="..\NetCore.Application\NetCore.Application.csproj" />
   </ItemGroup>
 
 </Project>

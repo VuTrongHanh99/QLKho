@@ -17,6 +17,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
+          "NetCore.Application": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -1162,6 +1163,19 @@
         "runtime": {
           "Data.SqlServer.dll": {}
         }
+      },
+      "NetCore.Application/1.0.0": {
+        "dependencies": {
+          "NetCore.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NetCore.Application.dll": {}
+        }
+      },
+      "NetCore.Domain/1.0.0": {
+        "runtime": {
+          "NetCore.Domain.dll": {}
+        }
       }
     }
   },
@@ -2054,6 +2068,16 @@
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
     "Data.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
