@@ -35,9 +35,11 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.dgvTV = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,41 +100,56 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnEdit
             // 
-            this.button2.Location = new System.Drawing.Point(238, 213);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 50);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(238, 213);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(126, 50);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(450, 213);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 50);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(450, 213);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(126, 50);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button4
+            // btnExit
             // 
-            this.button4.Location = new System.Drawing.Point(666, 213);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(126, 50);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Thoát";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(666, 213);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(126, 50);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // dgvTV
+            // 
+            this.dgvTV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTV.Location = new System.Drawing.Point(51, 269);
+            this.dgvTV.Name = "dgvTV";
+            this.dgvTV.RowHeadersWidth = 51;
+            this.dgvTV.RowTemplate.Height = 29;
+            this.dgvTV.Size = new System.Drawing.Size(1253, 329);
+            this.dgvTV.TabIndex = 10;
+            this.dgvTV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTV_CellClick);
+            this.dgvTV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTV_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1317, 627);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dgvTV);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSDT);
@@ -143,6 +160,7 @@
             this.Name = "Form1";
             this.Text = "Quản lí kho";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +178,9 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private DataGridView dgvTV;
+        private Button btnEdit;
+        private Button btnDelete;
+        private Button btnExit;
     }
 }

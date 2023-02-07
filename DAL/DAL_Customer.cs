@@ -108,7 +108,7 @@ namespace DAL
                 _conn.Open();
 
                 // Query string - vì xóa chỉ cần ID nên chúng ta ko cần 1 DTO, ID là đủ
-                string SQL = string.Format("DELETE FROM Customers WHERE Id = {0})", TV_ID);
+                string SQL = string.Format("DELETE FROM Customers WHERE Id = {0}", TV_ID);
 
                 // Command (mặc định command type = text nên chúng ta khỏi fải làm gì nhiều).
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
