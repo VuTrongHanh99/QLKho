@@ -3,10 +3,10 @@ using NetCore.Domain.Entities;
 
 namespace QLKho_app
 {
-    public partial class Form1 : Form
+    public partial class QLCustomer : Form
     {
         BUS_Customer busTV;
-        public Form1()
+        public QLCustomer()
         {
             InitializeComponent();
             busTV = new BUS_Customer();
@@ -22,10 +22,11 @@ namespace QLKho_app
             if (txtEmail.Text != "" && txtName.Text != "" && txtSDT.Text != "")
             {
                 // Tạo DTo
-                Customer tv = new Customer(); // Vì ID tự tăng nên để ID số gì cũng dc
+                NetCore.Domain.Entities.Customer tv = new NetCore.Domain.Entities.Customer(); // Vì ID tự tăng nên để ID số gì cũng dc
                 tv.DisplayName = txtName.Text;
                 tv.PhoneNumber = txtSDT.Text;
                 tv.Email = txtEmail.Text;
+                tv.Address = txtAddress.Text;
                 // Them
                 if (busTV.themThanhVien(tv))
                 {
@@ -55,11 +56,12 @@ namespace QLKho_app
                     //int ID = Convert.ToInt16(row.Cells[0].Value.ToString());
 
                     // Tạo DTo
-                    Customer tv = new Customer(); // Vì ID tự tăng nên để ID số gì cũng dc
+                    NetCore.Domain.Entities.Customer tv = new NetCore.Domain.Entities.Customer(); // Vì ID tự tăng nên để ID số gì cũng dc
                     tv.Id = Convert.ToInt16(dgvTV.Rows[dgvTV.SelectedCells[0].RowIndex].Cells[0].Value.ToString()); ;
                     tv.DisplayName = txtName.Text;
                     tv.PhoneNumber = txtSDT.Text;
                     tv.Email = txtEmail.Text;
+                    tv.Address = txtAddress.Text;
                     var check = busTV.suaThanhVien(tv);
                     // Sửa
                     if (check)
@@ -117,6 +119,7 @@ namespace QLKho_app
             txtName.Text = dgvTV.Rows[row].Cells[1].Value.ToString();
             txtSDT.Text = dgvTV.Rows[row].Cells[3].Value.ToString();
             txtEmail.Text = dgvTV.Rows[row].Cells[4].Value.ToString();
+            txtAddress.Text = dgvTV.Rows[row].Cells[2].Value.ToString();
             //// Chuyển giá trị lên form
             //txtName.Text = row.Cells[1].Value.ToString();
             //txtSDT.Text = row.Cells[3].Value.ToString();

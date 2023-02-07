@@ -1,6 +1,6 @@
 ﻿namespace QLKho_app
 {
-    partial class Form1
+    partial class QLCustomer
     {
         /// <summary>
         ///  Required designer variable.
@@ -39,13 +39,15 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.dgvTV = new System.Windows.Forms.DataGridView();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 42);
+            this.label1.Location = new System.Drawing.Point(52, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 0;
@@ -54,16 +56,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 104);
+            this.label2.Location = new System.Drawing.Point(52, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Số diednj thoại";
+            this.label2.Text = "Số điện thoại";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 159);
+            this.label3.Location = new System.Drawing.Point(52, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 2;
@@ -71,21 +73,21 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(239, 39);
+            this.txtName.Location = new System.Drawing.Point(239, 24);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(373, 27);
             this.txtName.TabIndex = 3;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(239, 97);
+            this.txtSDT.Location = new System.Drawing.Point(239, 73);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(373, 27);
             this.txtSDT.TabIndex = 4;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(239, 159);
+            this.txtEmail.Location = new System.Drawing.Point(239, 118);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(373, 27);
             this.txtEmail.TabIndex = 5;
@@ -141,11 +143,29 @@
             this.dgvTV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTV_CellClick);
             this.dgvTV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTV_CellContentClick);
             // 
-            // Form1
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(239, 165);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(373, 27);
+            this.txtAddress.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Địa chỉ";
+            // 
+            // QLCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1317, 627);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.dgvTV);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
@@ -157,7 +177,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "QLCustomer";
             this.Text = "Quản lí kho";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTV)).EndInit();
@@ -171,16 +191,15 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Label label4;
         private TextBox txtName;
         private TextBox txtSDT;
         private TextBox txtEmail;
+        private TextBox txtAddress;
         private Button btnAdd;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private DataGridView dgvTV;
         private Button btnEdit;
         private Button btnDelete;
         private Button btnExit;
+        private DataGridView dgvTV;
     }
 }

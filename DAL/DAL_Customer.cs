@@ -36,7 +36,7 @@ namespace DAL
                 _conn.Open();
 
                 // Query string - vì mình để TV_ID là identity (giá trị tự tăng dần) nên ko cần fải insert ID
-                string SQL = string.Format("INSERT INTO Customers(DisplayName, PhoneNumber, Email) VALUES ('{0}', '{1}', '{2}')", tv.DisplayName, tv.PhoneNumber, tv.Email);
+                string SQL = string.Format("INSERT INTO Customers(DisplayName, PhoneNumber, Email, Address) VALUES ('{0}', '{1}', '{2}', '{3}')", tv.DisplayName, tv.PhoneNumber, tv.Email, tv.Address);
 
                 // Command (mặc định command type = text nên chúng ta khỏi fải làm gì nhiều).
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
@@ -72,7 +72,7 @@ namespace DAL
                 _conn.Open();
 
                 // Query string
-                string SQL = string.Format("UPDATE Customers SET DisplayName = '{0}', PhoneNumber = '{1}', Email = '{2}' WHERE Id = {3}", tv.DisplayName, tv.PhoneNumber, tv.Email, tv.Id);
+                string SQL = string.Format("UPDATE Customers SET DisplayName = '{0}', PhoneNumber = '{1}', Email = '{2}', Address = '{3}' WHERE Id = {4}", tv.DisplayName, tv.PhoneNumber, tv.Email, tv.Address, tv.Id);
 
                 // Command (mặc định command type = text nên chúng ta khỏi fải làm gì nhiều).
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
