@@ -56,7 +56,11 @@ C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\runtimes\win\lib\netstandard
 C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\Data.SqlServer.dll
+C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Application.dll
+C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Domain.dll
 C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\Data.SqlServer.pdb
+C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Application.pdb
+C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Domain.pdb
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\QLKho.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\QLKho.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\QLKho.AssemblyInfoInputs.cache
@@ -73,7 +77,3 @@ C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\refint\QLKho.dll
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\QLKho.pdb
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\QLKho.genruntimeconfig.cache
 C:\Users\Admin\Desktop\QLKho\QLKho\obj\Debug\net6.0\ref\QLKho.dll
-C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Application.dll
-C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Domain.dll
-C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Application.pdb
-C:\Users\Admin\Desktop\QLKho\QLKho\bin\Debug\net6.0\NetCore.Domain.pdb

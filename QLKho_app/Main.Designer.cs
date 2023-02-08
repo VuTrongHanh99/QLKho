@@ -36,6 +36,7 @@
             this.setting = new System.Windows.Forms.ToolStripMenuItem();
             this.about = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlLoadMain = new System.Windows.Forms.Panel();
+            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             this.QLObject,
             this.toolStripMenuItem1,
             this.setting,
-            this.about});
+            this.about,
+            this.báoCáoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1717, 28);
@@ -95,6 +97,7 @@
             this.about.Name = "about";
             this.about.Size = new System.Drawing.Size(87, 24);
             this.about.Text = "Giới thiệu";
+            this.about.Click += new System.EventHandler(this.about_Click);
             // 
             // pnlLoadMain
             // 
@@ -103,6 +106,13 @@
             this.pnlLoadMain.Name = "pnlLoadMain";
             this.pnlLoadMain.Size = new System.Drawing.Size(1717, 654);
             this.pnlLoadMain.TabIndex = 1;
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
+            this.báoCáoToolStripMenuItem.Click += new System.EventHandler(this.báoCáoToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -132,5 +142,6 @@
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem setting;
         private ToolStripMenuItem about;
+        private ToolStripMenuItem báoCáoToolStripMenuItem;
     }
 }

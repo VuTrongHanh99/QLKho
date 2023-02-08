@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,7 +75,25 @@ namespace QLKho_app
             objForm.Show();
         }
 
+        private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlLoadMain.Controls.Clear();
+            this.Refresh();
+                KhachHangReport objForm = new KhachHangReport();
+                objForm.TopLevel = false;
+                pnlLoadMain.Controls.Add(objForm);
+                objForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                objForm.Dock = DockStyle.Fill;
+                pnlLoadMain.Controls.Add(objForm);
+                objForm.Show();
+        }
+
         private void hỗTrợToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void about_Click(object sender, EventArgs e)
         {
 
         }
